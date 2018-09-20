@@ -36,11 +36,6 @@
 
     <style>
 
-        @media (max-width: 992px){
-            ._stellar{
-                background-size: none!important;   
-            }
-        }
 
     </style>
 
@@ -108,7 +103,6 @@
                         <li><a href="#_carousel">Carousel slick.js</a></li>
                         <li><a href="#_header-background">Header Background</a></li>
                         <li><a href="#_parallax-fixed-bg">Parallax Fixed Background</a></li>
-                        <li><a href="#_parallax-stellar">Parallax Stellar</a></li>
                     </ul>
                 </li>
                 <li class="_sidebar-toggle">
@@ -815,39 +809,6 @@
 <pre class="language-html notranslate">&lt;header class="_header-background _src-bg _parallax-fixed"&gt;
                 
 &lt;/header&gt;
-</pre>
-
-        </div>
-
-        <!-- end  -->
-
-        <div class="_sidebar-mb" id="_parallax-stellar">
-            <h2 class="_push-b-m">Stellar</h2>
-            
-            <div class="_stellar" data-stellar-background-ratio="0.5">
-
-            </div>
-
-            <p class="_push-t-d">Because stellar.js doesn't support jquery version 3, for that use jquery migrate to fix it</p>
-
-<pre class="language-html notranslate">&lt;!-- cdn jQuery --&gt;
-&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
-&lt;!-- cdn jquery migrate --&gt;
-&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"&gt;&lt;/script&gt;
-</pre>
-
-<pre class="language-html notranslate">&lt;div class="_stellar" data-stellar-background-ratio="0.5"&gt;
-
-&lt;/div&gt;
-</pre>
-
-<pre class="language-js notranslate">$.stellar({
-    verticalScrolling: true,
-    parallaxBackgrounds: true,
-    responsive: true,
-    scrollProperty: 'scroll',
-    positionProperty: 'position'
-}).stellar('refresh');
 </pre>
 
         </div>
