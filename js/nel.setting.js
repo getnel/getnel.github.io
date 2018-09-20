@@ -78,15 +78,6 @@ $(function(){
         speed: 800
     });
 
-    // Stellar
-    $.stellar({
-        verticalScrolling: true,
-        parallaxBackgrounds: true,
-        responsive: true,
-        scrollProperty: 'scroll',
-        positionProperty: 'position'
-    }).stellar('refresh');
-
     // counterUp
     $('._counter').counterUp({
         delay: 10,
