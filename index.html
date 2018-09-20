@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="_nel Framework Built With CSS Variables And Open Source Code">
+    <meta name="author" content="Andika Chamberlin">
+    <!-- title -->
+    <title>_nel Framework</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/nel.png" type="image/x-icon">
+    <!-- _nel.css-->
+    <link rel="stylesheet" href="css/nel.min.css">
+    <!-- index-style.css -->
+    <link rel="stylesheet" href="index-style.css">
+    <!-- cdn jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- cdn prism -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+    <!-- cdn clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+
+    <!-- Alert Dont Support IE -->
+    <div id="_IE-Alert"></div>
+    <!-- End Alert Dont Support IE -->
+
+    <!-- Load -->
+    <div class="_load" id="_load">
+        <div class="_load-middle">
+            <div class="_load-circle"></div>
+        </div>
+    </div>
+    <!-- End Load -->
+
+    <!-- sidebar -->
+    <aside class="_sidebar" id="_sidebar">
+
+        <!-- sidebar header -->
+        <div class="_sidebar-header">
+            <div class="_position-middle notranslate">
+                <a href="index.html"><img src="img/nel.png" alt="_nel" class="_push-b-m"></a>
+                <a href="https://github.com/getnel/getnel.github.io">
+                    <img src="img/github.svg" alt="github" class="_inline-block">
+                    <sup>_nel v1.0 quantum 1</sup>
+                </a>
+            </div>
+        </div>
+        <!-- /sidebar header -->
+
+        <!-- sidebar items -->
+        <div class="_sidebar-items">
+
+            <!-- sidebar list -->
+            <ul class="_sidebar-list" id="_sidebar-list">
+                <li class="_sidebar-toggle">
+                    <a><strong>Getting Started</strong><i class="_sidebar-arrow"></i></a>
+                    <ul class="_sidebar-dropdown">
+                        <li><a href="#_introduction">Introduction</a></li>
+                        <li><a href="#_content">Content</a></li>
+                        <li><a href="#_browserdevice">Browsers & Devices</a></li>
+                        <li><a href="#_vendor-get">Vendor</a></li>
+                    </ul>
+                </li>
+                <li class="_sidebar-toggle">
+                    <a><strong>General Code</strong><i class="_sidebar-arrow"></i></a>
+                    <ul class="_sidebar-dropdown">
+                        <li><a href="#_variable">Variable</a></li>
+                        <li><a href="#_typography">Typography</a></li>
+                        <li><a href="#_code">Code</a></li>
+                        <li><a href="#_image">Images</a></li>
+                        <li><a href="#_figure">Figures</a></li>
+                        <li><a href="#_table">Tables</a></li>
+                        <li><a href="#_form">Forms</a></li>
+                        <li><a href="#_button">Buttons</a></li>
+                        <li><a href="#_helper">Helper Class</a></li>
+                        <li><a href="#_position">Position</a></li>
+                        <li><a href="#_badge">Badge</a></li>
+                        <li><a href="#_breadcrumb">Breadcrumb</a></li>
+                        <li><a href="#_article">Article</a></li>
+                        <li><a href="#_pagination">Pagination</a></li>
+                    </ul>
+                </li>
+                <li class="_sidebar-toggle">
+                    <a><strong>Utilities</strong><i class="_sidebar-arrow"></i></a>
+                    <ul class="_sidebar-dropdown">
+                        <li><a href="#_mq">Media Query</a></li>
+                        <li><a href="#_border">Borders</a></li>
+                        <li><a href="#_display">Display</a></li>
+                        <li><a href="#_wh">width & Height</a></li>
+                        <li><a href="#_color">Color</a></li>
+                        <li><a href="#_push">Push</a></li>
+                        <li><a href="#_embed">Embeds</a></li>
+                    </ul>
+                </li>
+                <li class="_sidebar-toggle">
+                    <a><strong>Layout</strong><i class="_sidebar-arrow"></i></a>
+                    <ul class="_sidebar-dropdown">
+                        <li><a href="#_grid">Grid</a></li>
+                        <li><a href="#_layout">Layout</a></li>
+                    </ul>
+                </li>
+                <li><a href="_components.html"><strong>Components</strong></a></li>
+                <li><a href="_themes.html"><strong>Themes</strong></a></li>
+                <li><a href="_codes.html"><strong>Codes</strong></a></li>
+                <li><a href="#_about"><strong>About</strong></a></li>
+            </ul>
+            <!-- /sidebar list -->
+        </div>
+        <!-- /sidebar items -->
+
+    </aside>
+    <!-- /sidebar -->
+
+    <!-- sidebar window close -->
+    <div class="_sidebar-window" id="_sidebar-window"></div>
+    <!-- /sidebar window close -->
+
+    <!-- sidebar btn -->
+    <div class="_sidebar-btn" id="_sidebar-btn">
+        <i class="_sidebar-btn-icon"></i>
+    </div>
+    <!-- sidebar btn -->
+
+    <div class="_sidebar-content">
+        <div class="_sidebar-content-header">
+            <div class="_position-middle">
+                <h1 class="notranslate">_nel</h1>
+                <div class="_layout-t _push-b-d">
+                    <p>Framework built with css variables and open source code. Focusing on popular browser C.F.O.E.S</p>
+                </div>
+                <a href="https://github.com/getnel/_nel-v1.0/archive/master.zip" download="" class="_btn-default">Download</a>
+            </div>
+        </div>
+        <div class="_sidebar-mb" id="_introduction">
+            <h2 class="_push-b-m">Introduction</h2>
+            <p class="_font-size-150pc">Create your web with css variables and open code sources. Now you don't have to worry about IE browser, because _nel it has blocked it. Besides, css variables are also not supported. C.F.O.E.S is an abbreviation of five popular browsers that are supported _nel.</p>
+            <h4 class="_push-t-d">Starter Template</h4>
+            <p class="_push-t-m">Below is the default code for building. After the code will be painted several elements, you understand it.</p>
+
+<pre class="language-html notranslate">&lt;!DOCTYPE html&gt;
+&lt;html lang="zxx"&gt;
+
+&lt;!-- head --&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="description" content="description"&gt;
+    &lt;meta name="author" content="author"&gt;
+    &lt;!-- title --&gt;
+    &lt;title&gt;Template&lt;/title&gt;
+    &lt;!-- Favicon --&gt;
+    &lt;link rel="icon" href="img/nel.png" type="image/x-icon"&gt;
+    &lt;!-- _nel.css--&gt;
+    &lt;link rel="stylesheet" href="css/nel.min.css"&gt;
+    &lt;!-- cdn jQuery --&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;!-- end head --&gt;
+
+&lt;!-- body --&gt;
+&lt;body&gt;
+
+    &lt;!-- Alert Dont Support IE --&gt;
+    &lt;div id="_IE-Alert"&gt;&lt;/div&gt;
+    &lt;!-- End Alert Dont Support IE --&gt;
+
+    &lt;!-- Load --&gt;
+    &lt;div class="_load" id="_load"&gt;
+        &lt;div class="_load-middle"&gt;
+            &lt;div class="_load-circle"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End Load --&gt;
+
+
+    &lt;!-- your code --&gt;
+    
+    
+
+    &lt;!-- end your code --&gt;
+
+
+    &lt;!-- _nel.js --&gt;
+    &lt;script src="js/nel.min.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            <h4 class="_push-t-d">Explanation</h4>
+            <p class="_push-t-m">Below are some explanations for the basic knowledge of using the framework. If you see there is a sign (_) at the beginning of each class or file, it is intentionally made to distinguish between classes and _nel framework files with vendor classes and files. _nel using css variable, so it doesn't use SASS, and that's also the reason why framework _nel doesn't support IE Browser.
+
+            <h5 class="_push-t-d">IE Alert</h5>
+            <p class="_push-t-m">The code below is used to raise a warning when a user uses IE Browser. If you don't believe open it in IE and you will see a black page with the words "Not Supported IE".</p>
+            
+
+<pre class="language-html notranslate">&lt;!-- Alert Dont Support IE --&gt;
+&lt;div id="_IE-Alert"&gt;&lt;/div&gt;
+&lt;!-- End Alert Dont Support IE --&gt;    
+</pre>
+    
+            <h5 class="_push-t-d">Load</h5>
+            <p class="_push-t-m">The code below is used to bring up the circle animation when the page is loaded. So a new page will be visible when all elements are successfully loaded.</p>
+
+<pre class="language-html notranslate">&lt;!-- Load --&gt;
+&lt;div class="_load" id="_load"&gt;
+    &lt;div class="_load-middle"&gt;
+        &lt;div class="_load-circle"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End Load --&gt;    
+</pre>
+            
+        </div>
+        <!-- end introduction -->
+
+        <div class="_sidebar-mb _push-t-g" id="_content">
+            <h2 class="_push-b-m">Content</h2>
+            <p class="_font-size-150pc">_nel is built using css variables and open source code, so there is a class _nel and vendor mixed, but don't worry because nel has a uniq code _ to overcome the overriding class. _nel also creates a function for javascript code, so each code is always wrapped with functions.</p>
+
+        </div>
+        <!-- end content -->
+
+        
+        <div class="_sidebar-mb" id="_browserdevice">
+            <h2 class="_push-b-m">Browsers & Devices</h2>
+            <p class="_font-size-150pc">_nel supports the latest browsers, and doesn't support older browsers especially IE. The reason is because _nel uses the function css and flexbox variables in the grid section</p>
+
+            <h5 class="_push-t-d">Mobile devices</h5>
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th class="_width-50pc">Android</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                    <tr>
+                        <th>iOS</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                    <tr>
+                        <th>Windows 10 Mobile</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                </table>
+            </div>
+
+            <h5 class="_push-t-d">Desktop Browsers</h5>
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th class="_width-50pc">Chrome</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                    <tr>
+                        <th>Firefox</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                    <tr>
+                        <th>Microsoft Edge</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                    <tr>
+                        <th>Opera</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                    <tr>
+                        <th>Safari</th>
+                        <td class="_nel-green"><b>Supported</b></td>
+                    </tr>
+                    <tr>
+                        <th>IE 11-</th>
+                        <td class="_nel-red"><b>Not Supported</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- end browser & device -->
+
+        
+        <div class="_sidebar-mb" id="_vendor-get">
+            <h2 class="_push-b-m">Vendor</h2>
+            <p class="_font-size-150pc">_nel recommends the use of vendors for better support. Because the tunnel is created with an open source code that is dominantly licensed by MIT. So use the vendor for your needs. And don't worry the class will be overwritten, because nel already has a unique code to deal with it</p>
+
+        </div>
+        <!-- end vendor -->
+
+         <div class="_sidebar-mb" id="_variable">
+            <h2 class="_push-b-m">Variable</h2>
+            <p class="_font-size-150pc">_nel does not use SASS because it already uses the variable css function. And that will also make it easier for you without setting Ruby or something.</p>
+
+            <h5 class="_push-t-d"><b class="_nel-blue">:root</b></h5>
+            <p>The _nel variable is placed on <b class="_nel-blue">:root</b>. This functions globally and you can call variables even though they are different files. Below this is part of the variable code from the _nel, a deliberate variable naming similar to make it easier to remember.</p>
+
+<pre class="language-css notranslate">/*-----------------------------------------------------------------*/
+/*global variable*/
+
+:root{
+
+  /*position*/
+  --fixed    : fixed;
+  --absolute : absolute;
+  --relative : relative;
+  --static   : static;
+  --sticky   : sticky;
+
+  /*vw & vh*/
+  --100vw  : 100vw;
+  --100vh  : 100vh;
+
+/*end global variable*/
+}
+/*-----------------------------------------------------------------*/   
+</pre>
+
+        </div>
+        <!-- end variable -->
+
+         <div class="_sidebar-mb" id="_typography">
+            <h2 class="_push-b-m">Typography</h2>
+            <p class="_font-size-150pc">To be honest, the author used to dislike typography, but after years of developing the web, this is very important. If you don't believe, wait to realize it.</p>
+
+            <h5 class="_push-t-d">Headings</h5>
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <td><h1>H1. _nel Heading</h1></td>
+                        <td class="_nel-yellow"><b>4em</b></td>
+                    </tr>
+                    <tr>
+                        <td><h2>H2. _nel Heading</h2></td>
+                        <td class="_nel-yellow"><b>3em</b></td>
+                    </tr>
+                    <tr>
+                        <td><h3>H3. _nel Heading</h3></td>
+                        <td class="_nel-yellow"><b>2.5em</b></td>
+                    </tr>
+                    <tr>
+                        <td><h4>H4. _nel Heading</h4></td>
+                        <td class="_nel-yellow"><b>2em</b></td>
+                    </tr>
+                    <tr>
+                        <td><h5>H1. _nel Heading</h5></td>
+                        <td class="_nel-yellow"><b>1.5em</b></td>
+                    </tr>
+                    <tr>
+                        <td><h6>H1. _nel Heading</h6></td>
+                        <td class="_nel-yellow"><b>1em</b></td>
+                    </tr>
+                </table>
+            </div>
+
+<pre class="language-html notranslate">&lt;h1&gt;h1. _nel Heading&lt;/h1&gt;
+&lt;h2&gt;h2. _nel Heading&lt;/h2&gt;
+&lt;h3&gt;h3. _nel Heading&lt;/h3&gt;
+&lt;h4&gt;h4. _nel Heading&lt;/h4&gt;
+&lt;h5&gt;h5. _nel Heading&lt;/h5&gt;
+&lt;h6&gt;h6. _nel Heading&lt;/h6&gt;
+</pre>
+
+            <h5 class="_push-t-d">Small</h5>
+            <p class="_push-t-m">Make a small font size <b class="_nel-yellow">80%</b> with color <b class="_nel-yellow">#999</b></p>
+            <h3>_nel <small>Linquini</small></h3>
+            
+<pre class="language-html notranslate">&lt;h3&gt;_nel &lt;small&gt;Linquini&lt;/small&gt;&lt;/h3&gt;
+</pre>
+
+            <h5 class="_push-t-d">Paragraph</h5>
+            <p class="_push-t-m">Paragraphs are made margin and padding <b class="_nel-yellow">0</b> so that there is no distance, and given <b class="_nel-blue">word-wrap : break-word;</b> so that the paragraph is always responsive to the browser.</p>
+            
+<pre class="language-html notranslate">&lt;p&gt;...&lt;/p&gt;
+</pre>
+
+            <h5 class="_push-t-d">Marked text</h5>
+            <p class="_push-t-m">If you want to create a background color on the text, you use it tag <mark>mark</mark> </p>
+
+<pre class="language-html notranslate">&lt;mark&gt;mark&lt;/mark&gt;
+</pre>
+
+            <h5 class="_push-t-d">Deleted text</h5>
+            <p class="_push-t-m">I fell <del> love </del> from the stairs</p>
+
+<pre class="language-html notranslate">&lt;del&gt;del&lt;/del&gt;
+</pre>
+
+            <h5 class="_push-t-d">
+                <strong>S</strong> <sup>strong</sup>
+                <em>E</em> <sup>em</sup>
+                <ins>I</ins> <sup>ins</sup>
+            </h5>
+            <p class="_push-t-m">SEI is an abbreviation of <b class="_nel-red">strong</b><b class="_nel-red">em</b><b class="_nel-red">ins</b>
+                
+                <strong>Bold</strong>
+                <em>Italic</em>
+                <ins>Underline</ins>
+            </p>
+
+<pre class="language-html notranslate">&lt;strong&gt;Bold&lt;/strong&gt;
+&lt;em&gt;Italic&lt;/em&gt;
+&lt;ins&gt;Underline&lt;/ins&gt;
+</pre>
+
+            <h5 class="_push-t-d">Alignment</h5>
+            <p class="_push-t-m _left-align">_nel Framework</p>
+            
+<pre class="language-html notranslate">&lt;p class="_left-align"&gt;_nel Framework&lt;/p&gt;
+</pre>
+
+            <p class="_push-t-m _right-align">_nel Framework</p>
+            
+<pre class="language-html notranslate">&lt;p class="_right-align"&gt;_nel Framework&lt;/p&gt;
+</pre>
+
+            <p class="_push-t-m _center-align">_nel Framework</p>
+            
+<pre class="language-html notranslate">&lt;p class="_center-align"&gt;_nel Framework&lt;/p&gt;
+</pre>
+
+            <p class="_push-t-m _justify-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, doloremque accusamus cumque laudantium odio quasi, similique corporis! Molestiae quas nulla numquam tenetur maxime odit laboriosam vitae dignissimos dolorem aut, eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis mollitia esse vitae nesciunt ratione reprehenderit blanditiis. Modi, eos assumenda? Debitis sit rem commodi numquam aspernatur dignissimos architecto doloribus perspiciatis qui.</p>
+            
+<pre class="language-html notranslate">&lt;p class="_justify-align"&gt;_nel Framework&lt;/p&gt;
+</pre>
+
+            <h5 class="_push-t-d">Position Absolute</h5>
+            <p class="_push-t-m _left-align">This position has absolute properties, so you can make a relative container to use this position. In addition, you can also use a fixed position or the position itself (absolute) for use. For example the letters below are made with relative and high positions <b class="_nel-yellow">300px</b></p>
+
+            <div class="_push-t-d _position-demo">
+                <div class="_position-topleft">
+                    Top left
+                </div>
+                <div class="_position-topright">
+                    Top right
+                </div>
+                <div class="_position-bottomleft">
+                    Bottom Left
+                </div>
+                <div class="_position-bottomright">
+                    Bottom Right
+                </div>
+                <div class="_position-bottommiddle">
+                    Bottom Middle
+                </div>
+                <div class="_position-topmiddle">
+                    Top Middle
+                </div>
+                <div class="_position-leftmiddle">
+                    Left Middle
+                </div>
+                <div class="_position-rightmiddle">
+                    Right Middle
+                </div>
+                <div class="_position-middle">
+                    Middle
+                </div>
+            </div>
+
+            <h5 class="_push-t-d">Transformation</h5>
+            <p class="_push-t-m _left-align">Change text transformation with class.</p>
+
+            <p class="_lowercase _push-t-d">lowercase</p>
+            <p class="_uppercase _push-t-m">uppercase</p>
+            <p class="_capitalize _push-t-m">capitalize</p>
+
+<pre class="language-html notranslate">&lt;p class="_lowercase"&gt;lowercase&lt;/p&gt;
+&lt;p class="_uppercase"&gt;uppercase&lt;/p&gt;
+&lt;p class="_capitalize"&gt;capitalize&lt;/p&gt;
+</pre>
+
+            <h5 class="_push-t-d">Drop Caps</h5>
+            <p class="_drop-caps _push-t-d">m lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit libero aspernatur quibusdam quam inventore totam fugiat commodi. Temporibus ut corrupti sint maiores excepturi aliquid omnis consectetur voluptates cumque laborum?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem suscipit illo voluptates dolore quos, quisquam natus quidem soluta temporibus eveniet animi ullam odio ut dolorum. Blanditiis amet animi, natus.</p>
+
+<pre class="language-html notranslate">&lt;p class="_drop-caps"&gt;Drop Caps&lt;/p&gt;</pre>
+
+            <h5 class="_push-t-d">Hover Text</h5>
+            <p class="_push-t-d">Its function is to bring up words of understanding embedded when hovered <abbr title="Ini memunculkan kata kata ketika dihover">abbr</abbr>
+            </p>
+
+<pre class="language-html notranslate">&lt;p class="_drop-caps"&gt;Drop Caps&lt;/p&gt;</pre>
+
+            <h5 class="_push-t-d">Address</h5>
+           
+            <address>
+                <strong>Flamecore</strong><br>
+                Dusun Rambe, Melati II, Perbaungan 20986<br>
+                Deli Serdang, Sumatera Utara, ID<br>
+                Phone : (+62) 23-xxxx-xxxx
+            </address>
+
+            <address>
+                <strong>Full Name</strong><br>
+                <a href="mailto:#">first.last@example.com</a>
+            </address>
+
+<pre class="language-html notranslate">&lt;address&gt;
+    &lt;strong&gt;Flamecore&lt;/strong&gt;&lt;br&gt;
+    Dusun Rambe, Melati II, Perbaungan 20986&lt;br&gt;
+    Deli Serdang, Sumatera Utara, ID&lt;br&gt;
+    Phone : (+62) 23-xxxx-xxxx
+&lt;/address&gt;
+
+&lt;address&gt;
+    &lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt;
+    &lt;a href="mailto:#"&gt;first.last@example.com&lt;/a&gt;
+&lt;/address&gt;
+</pre>    
+
+            <h5 class="_push-t-d">Blockquotes</h5>
+
+            <blockquote class="_push-t-d">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus odio iusto ex eius praesentium placeat quas, consequuntur reprehenderit harum fugiat dolor explicabo voluptas qui quaerat recusandae, molestias. Tenetur veniam, porro?</p>
+
+                
+                <cite title="Source Title"> -Name Quote</cite>
+            </blockquote>
+               
+<pre class="language-html notranslate">&lt;blockquote&gt;
+    &lt;p&gt;Quote&lt;/p&gt;
+    &lt;cite&gt; -Name Quote&lt;/cite&gt;
+&lt;/blockquote&gt;
+</pre>
+
+            <h5 class="_push-t-d">List</h5>
+            <div class="_row-flex _grid _mpush-d">
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <p class="_push-t-d">List</p>
+                    <ul class="_list _push-t-d">
+                        <li>_nel 1</li>
+                        <li>_nel 2
+                            <ul>
+                                <li>_nel sub 2.1</li>
+                                <li>_nel sub 2.2
+                                    <ul>
+                                        <li>_nel sub 2.2.1</li>
+                                        <li>_nel sub 2.2.2</li>
+                                        <li>_nel sub 2.2.3</li>
+                                    </ul>
+                                </li>
+                                <li>_nel sub 2.3</li>
+                            </ul>
+                        </li>
+                        <li>_nel 3</li>
+                    </ul>
+
+<pre class="language-html notranslate">&lt;ul class="_list"&gt;
+    &lt;li&gt;_nel 1&lt;/li&gt;
+    &lt;li&gt;_nel 2
+        &lt;ul&gt;
+            &lt;li&gt;_nel sub 2.1&lt;/li&gt;
+            &lt;li&gt;_nel sub 2.2
+                &lt;ul&gt;
+                    &lt;li&gt;_nel sub 2.2.1&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.2&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;_nel sub 2.3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;_nel 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <p class="_push-t-d">List Circle</p>
+                    <ul class="_list-circle _push-t-d">
+                        <li>_nel 1</li>
+                        <li>_nel 2
+                            <ul>
+                                <li>_nel sub 2.1</li>
+                                <li>_nel sub 2.2
+                                    <ul>
+                                        <li>_nel sub 2.2.1</li>
+                                        <li>_nel sub 2.2.2</li>
+                                        <li>_nel sub 2.2.3</li>
+                                    </ul>
+                                </li>
+                                <li>_nel sub 2.3</li>
+                            </ul>
+                        </li>
+                        <li>_nel 3</li>
+                    </ul>
+
+<pre class="language-html notranslate">&lt;ul class="_list-circle"&gt;
+    &lt;li&gt;_nel 1&lt;/li&gt;
+    &lt;li&gt;_nel 2
+        &lt;ul&gt;
+            &lt;li&gt;_nel sub 2.1&lt;/li&gt;
+            &lt;li&gt;_nel sub 2.2
+                &lt;ul&gt;
+                    &lt;li&gt;_nel sub 2.2.1&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.2&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;_nel sub 2.3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;_nel 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <p>List Square</p>
+                    <ul class="_list-square _push-t-d">
+                        <li>_nel 1</li>
+                        <li>_nel 2
+                            <ul>
+                                <li>_nel sub 2.1</li>
+                                <li>_nel sub 2.2
+                                    <ul>
+                                        <li>_nel sub 2.2.1</li>
+                                        <li>_nel sub 2.2.2</li>
+                                        <li>_nel sub 2.2.3</li>
+                                    </ul>
+                                </li>
+                                <li>_nel sub 2.3</li>
+                            </ul>
+                        </li>
+                        <li>_nel 3</li>
+                    </ul>
+
+<pre class="language-html notranslate">&lt;ul class="_list-square"&gt;
+    &lt;li&gt;_nel 1&lt;/li&gt;
+    &lt;li&gt;_nel 2
+        &lt;ul&gt;
+            &lt;li&gt;_nel sub 2.1&lt;/li&gt;
+            &lt;li&gt;_nel sub 2.2
+                &lt;ul&gt;
+                    &lt;li&gt;_nel sub 2.2.1&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.2&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;_nel sub 2.3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;_nel 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <p>List Upper Roman</p>
+                    <ul class="_list-upper-roman _push-t-d">
+                        <li>_nel 1</li>
+                        <li>_nel 2
+                            <ul>
+                                <li>_nel sub 2.1</li>
+                                <li>_nel sub 2.2
+                                    <ul>
+                                        <li>_nel sub 2.2.1</li>
+                                        <li>_nel sub 2.2.2</li>
+                                        <li>_nel sub 2.2.3</li>
+                                    </ul>
+                                </li>
+                                <li>_nel sub 2.3</li>
+                            </ul>
+                        </li>
+                        <li>_nel 3</li>
+                    </ul>
+
+<pre class="language-html notranslate">&lt;ul class="_list-upper-roman"&gt;
+    &lt;li&gt;_nel 1&lt;/li&gt;
+    &lt;li&gt;_nel 2
+        &lt;ul&gt;
+            &lt;li&gt;_nel sub 2.1&lt;/li&gt;
+            &lt;li&gt;_nel sub 2.2
+                &lt;ul&gt;
+                    &lt;li&gt;_nel sub 2.2.1&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.2&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;_nel sub 2.3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;_nel 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <p>List Lower Alpha</p>
+                    <ul class="_list-lower-alpha _push-t-d">
+                        <li>_nel 1</li>
+                        <li>_nel 2
+                            <ul>
+                                <li>_nel sub 2.1</li>
+                                <li>_nel sub 2.2
+                                    <ul>
+                                        <li>_nel sub 2.2.1</li>
+                                        <li>_nel sub 2.2.2</li>
+                                        <li>_nel sub 2.2.3</li>
+                                    </ul>
+                                </li>
+                                <li>_nel sub 2.3</li>
+                            </ul>
+                        </li>
+                        <li>_nel 3</li>
+                    </ul>
+
+<pre class="language-html notranslate">&lt;ul class="_list-lower-alpha"&gt;
+    &lt;li&gt;_nel 1&lt;/li&gt;
+    &lt;li&gt;_nel 2
+        &lt;ul&gt;
+            &lt;li&gt;_nel sub 2.1&lt;/li&gt;
+            &lt;li&gt;_nel sub 2.2
+                &lt;ul&gt;
+                    &lt;li&gt;_nel sub 2.2.1&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.2&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;_nel sub 2.3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;_nel 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <p>List Number</p>
+                    <ol class="_list-number _push-t-d">
+                        <li>_nel 1</li>
+                        <li>_nel 2
+                            <ol>
+                                <li>_nel sub 2.1</li>
+                                <li>_nel sub 2.2
+                                    <ol>
+                                        <li>_nel sub 2.2.1</li>
+                                        <li>_nel sub 2.2.2</li>
+                                        <li>_nel sub 2.2.3</li>
+                                    </ol>
+                                </li>
+                                <li>_nel sub 2.3</li>
+                            </ol>
+                        </li>
+                        <li>_nel 3</li>
+                    </ol>
+
+<pre class="language-html notranslate">&lt;ul class="_list-number"&gt;
+    &lt;li&gt;_nel 1&lt;/li&gt;
+    &lt;li&gt;_nel 2
+        &lt;ul&gt;
+            &lt;li&gt;_nel sub 2.1&lt;/li&gt;
+            &lt;li&gt;_nel sub 2.2
+                &lt;ul&gt;
+                    &lt;li&gt;_nel sub 2.2.1&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.2&lt;/li&gt;
+                    &lt;li&gt;_nel sub 2.2.3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;_nel sub 2.3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;_nel 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                </div>
+            </div>
+
+            <h5 class="_push-t-d">Description</h5>
+
+            <dl class="_push-t-d">
+              <dt>Lorem</dt>
+              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem a, fugiat placeat maiores reprehenderit voluptate at quaerat, alias explicabo sit eos minus dolore iste modi? Corporis iusto accusamus dicta, maxime?</dd>
+            </dl>
+
+<pre class="language-html notranslate">&lt;dl&gt;
+    &lt;dt&gt;...&lt;/dt&gt;
+    &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+            <dl class="_dl-side">
+              <dt>Lorem ipsum dolor sit amet</dt>
+              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem a, fugiat placeat maiores reprehenderit</dd>
+            </dl>
+
+<pre class="language-html notranslate">&lt;dl class="_dl-side"&gt;
+    &lt;dt&gt;...&lt;/dt&gt;
+    &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+        
+        </div>
+        <!-- end typography -->
+
+         <div class="_sidebar-mb" id="_code">
+            <h2 class="_push-b-m">Code</h2>
+            <p class="_font-size-150pc">Make a code with the tag pre and code. Besides that you can also use xmp tags, but this is not recommended. To make the code untranslated, use it <b class="_nel-yellow">class="notranslate".</b></p>
+
+<pre class="notranslate">
+<code>body{
+    height: var(--100vh);
+}
+</code>
+</pre>
+
+<pre class="language-html notranslate _mpush-t-g">&lt;pre class="notranslate"&gt;
+&lt;code&gt;body{
+    height: var(--100vh);
+}
+&lt;/code&gt;
+&lt;/pre&gt;
+</pre>
+
+            <h5 class="_push-t-d _push-b-m">Keyboard</h5>
+            <kbd>ctrl+k+b</kbd>
+
+<pre class="language-html notranslate">&lt;kbd&gt;...&lt;/kbd&gt;
+</pre>
+
+
+        </div>
+        <!-- end code -->
+
+        <div class="_sidebar-mb" id="_image">
+            <h2 class="_push-b-m">Images</h2>
+            <p class="_font-size-150pc">Create responsive images using only img tags. Below are the styles used by the img tag.</p>
+
+<pre class="language-css notranslate">img {
+  display   : var(--block);
+  max-width : var(--100pc);
+  margin    : var(--auto);
+}
+</pre>
+
+            <div class="_img-demo">
+                <div class="_position-middle">
+                    200px x 200px
+                </div>
+            </div>
+
+<pre class="language-html notranslate">&lt;img src="folder/sub-folder" alt="images"&gt;
+</pre>
+
+        </div>
+        <!-- end images -->
+
+         <div class="_sidebar-mb" id="_figure">
+            <h2 class="_push-b-m">Figures</h2>
+            <p class="_font-size-150pc">Creating an image has a description.</p>
+
+            <figure class="_push-t-d">
+                <div class="_img-demo">
+                    <div class="_position-middle">
+                        200px x 200px
+                    </div>
+                </div>
+                <figcaption>Figure Caption</figcaption>
+            </figure>
+
+<pre class="language-html notranslate">&lt;figure&gt;
+    &lt;img src="folder/sub-folder" alt="images"&gt;
+    &lt;figcaption&gt;Figure Caption&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+
+        </div>
+        <!-- end figure -->
+
+        <div class="_sidebar-mb" id="_table">
+            <h2 class="_push-b-m">Tables</h2>
+            <p class="_font-size-150pc">Make tables responsive and more elegant.</p>
+
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>HTML</th>
+                        <th>CSS</th>
+                        <th>Javascript</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Haml</td>
+                        <td>LESS</td>
+                        <td>Babel</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pug</td>
+                        <td>SCSS</td>
+                        <td>TypeScript</td>
+                    </tr>
+                </table>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_table-scroll"&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;No&lt;/th&gt;
+            &lt;th&gt;HTML&lt;/th&gt;
+            &lt;th&gt;CSS&lt;/th&gt;
+            &lt;th&gt;Javascript&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Haml&lt;/td&gt;
+            &lt;td&gt;LESS&lt;/td&gt;
+            &lt;td&gt;Babel&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Pug&lt;/td&gt;
+            &lt;td&gt;SCSS&lt;/td&gt;
+            &lt;td&gt;TypeScript&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end tables -->
+
+        <div class="_sidebar-mb" id="_form">
+            <h2 class="_push-b-m">Forms</h2>
+            <p class="_font-size-150pc">Styles that are only made simple. If you don't believe, see for yourself.</p>
+
+            <form action="form.php" class="_push-t-d _demo-form">
+                <label for="text">Type Text</label>
+                <input id="text" type="text" name="text" placeholder="Text">
+                
+                <label for="password">Type Password</label>
+                <input id="password" type="password" name="password" placeholder="Password" required>
+
+                <label for="email">Type Email</label>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+
+                <label for="search">Type Search</label>
+                <input id="search" type="search" name="search" placeholder="Search">
+
+                <label for="url">Type URL</label>
+                <input id="url" type="url" name="url" placeholder="URL">
+
+                <label for="number">Type Number</label>
+                <input id="number" type="number" name="number" min="1" max="30" value="30">
+
+                <label for="range">Type Range</label>
+                <input id="range" type="range" name="range" min="1" max="100">
+
+                <label for="file">Type File</label>
+                <input id="file" type="file" name="file">
+
+                <label for="submit">Type Submit</label>
+                <input id="submit" type="submit" name="submit" value="Submit">
+
+                <label for="button">Type Button</label>
+                <input id="button" type="button" name="button" value="Button"> 
+                    
+                <label for="reset">Type Reset</label>
+                <input id="reset" type="reset" name="reset">
+            
+                <label for="radio">Type Radio</label>
+                <input id="radio" type="radio" name="radio">
+
+                <label for="checkbox">Type checkbox</label>
+                <input id="checkbox" type="checkbox" name="checkbox">      
+            </form>
+
+<pre class="language-html notranslate">&lt;form action="form.php"&gt;
+    &lt;label for="text"&gt;Type Text&lt;/label&gt;
+    &lt;input id="text" type="text" name="text" placeholder="Text"&gt;
+    
+    &lt;label for="password"&gt;Type Password&lt;/label&gt;
+    &lt;input id="password" type="password" name="password" placeholder="Password" required&gt;
+
+    &lt;label for="email"&gt;Type Email&lt;/label&gt;
+    &lt;input id="email" type="email" name="email" placeholder="Email" required&gt;
+
+    &lt;label for="search"&gt;Type Search&lt;/label&gt;
+    &lt;input id="search" type="search" name="search" placeholder="Search"&gt;
+
+    &lt;label for="url"&gt;Type URL&lt;/label&gt;
+    &lt;input id="url" type="url" name="url" placeholder="URL"&gt;
+
+    &lt;label for="number"&gt;Type Number&lt;/label&gt;
+    &lt;input id="number" type="number" name="number" min="1" max="30" value="30"&gt;
+
+    &lt;label for="range"&gt;Type Range&lt;/label&gt;
+    &lt;input id="range" type="range" name="range" min="1" max="100"&gt;
+
+    &lt;label for="file"&gt;Type File&lt;/label&gt;
+    &lt;input id="file" type="file" name="file"&gt;
+
+    &lt;label for="submit"&gt;Type Submit&lt;/label&gt;
+    &lt;input id="submit" type="submit" name="submit" value="Submit"&gt;
+
+    &lt;label for="button"&gt;Type Button&lt;/label&gt;
+    &lt;input id="button" type="button" name="button" value="Button"&gt; 
+        
+    &lt;label for="reset"&gt;Type Reset&lt;/label&gt;
+    &lt;input id="reset" type="reset" name="reset"&gt;
+
+    &lt;label for="radio"&gt;Type Radio&lt;/label&gt;
+    &lt;input id="radio" type="radio" name="radio"&gt;
+
+    &lt;label for="checkbox"&gt;Type checkbox&lt;/label&gt;
+    &lt;input id="checkbox" type="checkbox" name="checkbox"&gt;      
+&lt;/form&gt;
+</pre>
+
+        </div>
+        <!-- end form -->
+
+        <div class="_sidebar-mb" id="_button">
+            <h2 class="_push-b-m">Buttons</h2>
+            <p class="_font-size-150pc">Make simple buttons with class <b class="_nel-yellow">._btn</b></p>
+
+            <div class="_push-t-d">
+
+                <span class="_btn-default _push-t-s">Button</span>
+                <span class="_btn _nel-bg-red _push-t-s">Button</span>
+                <span class="_btn _nel-bg-yellow _push-t-s">Button</span>
+                <span class="_btn _nel-bg-green _push-t-s">Button</span>
+                <span class="_btn _nel-bg-blue _push-t-s">Button</span>
+
+            </div>
+
+<pre class="language-html notranslate">&lt;span class="_btn-default"&gt;Button&lt;/span&gt;
+&lt;span class="_btn _nel-bg-red"&gt;Button&lt;/span&gt;
+&lt;span class="_btn _nel-bg-yellow"&gt;Button&lt;/span&gt;
+&lt;span class="_btn _nel-bg-green"&gt;Button&lt;/span&gt;
+&lt;span class="_btn _nel-bg-blue"&gt;Button&lt;/span&gt;
+</pre>
+
+        </div>
+        <!-- end button -->
+
+        <div class="_sidebar-mb" id="_helper">
+            <h2 class="_push-b-m">Helper Class</h2>
+            <p class="_font-size-150pc">Make colored warning boxes and important note boxes with the helper class. The soft colors of the rainbow are beautiful. Red, Yellow, Green, Blue.</p>
+
+            <p class="_warning-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis vero necessitatibus, dolorum sint libero consequatur iste sapiente quam similique, excepturi provident deserunt, eveniet velit quae facilis, veritatis aut. Unde?</p>
+
+            <p class="_warning-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis vero necessitatibus, dolorum sint libero consequatur iste sapiente quam similique, excepturi provident deserunt, eveniet velit quae facilis, veritatis aut. Unde?</p>
+
+            <p class="_warning-yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis vero necessitatibus, dolorum sint libero consequatur iste sapiente quam similique, excepturi provident deserunt, eveniet velit quae facilis, veritatis aut. Unde?</p>
+
+            <p class="_warning-green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis vero necessitatibus, dolorum sint libero consequatur iste sapiente quam similique, excepturi provident deserunt, eveniet velit quae facilis, veritatis aut. Unde?</p>
+
+            <p class="_warning-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis vero necessitatibus, dolorum sint libero consequatur iste sapiente quam similique, excepturi provident deserunt, eveniet velit quae facilis, veritatis aut. Unde?</p>
+
+<pre class="language-html notranslate">&lt;p class="_warning-default"&gt;...&lt;/p&gt;
+&lt;p class="_warning-red"&gt;...&lt;/p&gt;
+&lt;p class="_warning-yellow"&gt;...&lt;/p&gt;
+&lt;p class="_warning-green"&gt;...&lt;/p&gt;
+&lt;p class="_warning-blue"&gt;...&lt;/p&gt;
+</pre>
+
+            <p class="_helper-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="_helper-yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="_helper-green">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="_helper-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+<pre class="language-html notranslate">&lt;p class="_helper-red"&gt;...&lt;/p&gt;
+&lt;p class="_helper-yellow"&gt;...&lt;/p&gt;
+&lt;p class="_helper-green"&gt;...&lt;/p&gt;
+&lt;p class="_helper-blue"&gt;...&lt;/p&gt;
+</pre>
+
+        </div>
+        <!-- end helper -->
+
+        <div class="_sidebar-mb" id="_position">
+            <h2 class="_push-b-m">Position</h2>
+            <p class="_font-size-150pc">Make the position static, relative, absolute, fixed and sticky with class.</p>
+
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th>Class</th>
+                        <th colspan="5">Value</th>
+                    </tr>
+                    <tr>
+                        <td>_static</td>
+                        <td>static</td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td>_relative</td>
+                        <td>relative</td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td>_absolute</td>
+                        <td>absolute</td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td>_fixed</td>
+                        <td>fixed</td>
+                        <td>top: 0</td>
+                        <td>left: 0</td>
+                        <td>right: 0</td>
+                        <td>z-index: 9998</td>
+                    </tr>
+                    <tr>
+                        <td>_sticky</td>
+                        <td>sticky</td>
+                        <td>top : 0</td>
+                        <td colspan="3">z-index: 9998</td>
+                    </tr>
+                </table>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_static"&gt;
+
+&lt;/div&gt;
+&lt;div class="_relative"&gt;
+
+&lt;/div&gt;
+&lt;div class="_absolute"&gt;
+
+&lt;/div&gt;
+&lt;div class="_fixed"&gt;
+
+&lt;/div&gt;
+&lt;div class="_sticky"&gt;
+
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end position -->
+
+        <div class="_sidebar-mb" id="_badge">
+            <h2 class="_push-b-m">Badge</h2>
+            <p class="_font-size-150pc">Beautiful badge to make small round notifications.</p>
+
+            <div class="_push-t-d">
+                <span class="_badge-text _nel-bg-blue">New</span>
+                <span class="_badge">1.0</span>
+                <span class="_badge _nel-bg-red">2.0</span>
+                <span class="_badge _nel-bg-yellow">3.0</span>
+                <span class="_badge _nel-bg-green">4.0</span>
+                <span class="_badge _nel-bg-blue">5.0</span>
+            </div>
+
+<pre class="language-html notranslate">&lt;span class="_badge-text _nel-bg-blue"&gt;New&lt;/span&gt;
+&lt;span class="_badge"&gt;1.0&lt;/span&gt;
+&lt;span class="_badge _nel-bg-red"&gt;2.0&lt;/span&gt;
+&lt;span class="_badge _nel-bg-yellow"&gt;3.0&lt;/span&gt;
+&lt;span class="_badge _nel-bg-green"&gt;4.0&lt;/span&gt;
+&lt;span class="_badge _nel-bg-blue"&gt;5.0&lt;/span&gt;
+</pre>
+
+        </div>
+        <!-- end badge -->
+
+        <div class="_sidebar-mb" id="_breadcrumb">
+            <h2 class="_push-b-m">Breadcrumb</h2>
+            <p class="_font-size-150pc">Make a horizontal arrow navigation.</p>
+
+            <div class="_breadcrumb _push-t-d">
+                <span>library</span>
+                <span>bin</span>
+                <span>mysql</span>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_breadcrumb"&gt;
+    &lt;span&gt;library&lt;/span&gt;
+    &lt;span&gt;bin&lt;/span&gt;
+    &lt;span&gt;mysql&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end breadcrumb -->
+
+        <div class="_sidebar-mb" id="_article">
+            <h2 class="_push-b-m">Article</h2>
+            <p class="_font-size-150pc">Make articles from titles, when they are published, comments, readmore, etc.</p>
+
+            <div class="_article">
+                <h3 class="_article-heading">Heading</h3>
+                <div class="_article-publish">
+                    <span>Written by</span>
+                    <span><a href="#">andikachamberlin</a></span>
+                    <span>01 Januari 2018</span>
+                    <span><a href="#">Category</a></span>
+                </div>
+
+                <p class="_article-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid expedita ratione maxime mollitia aperiam vel error ex libero delectus neque nemo ab quia illum sed minus in unde, voluptatem eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ipsam ex optio fugit assumenda accusamus labore exercitationem a blanditiis, repudiandae veritatis unde dolorum amet magni eum. Totam modi, accusamus doloremque.
+                </p>
+
+                <div class="_article-btn">
+                    <a href="#">Readmore</a>
+                    <a href="#">Comments <span class="_badge">10</span></a>
+                </div>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_article"&gt;
+    &lt;h3 class="_article-heading"&gt;Heading&lt;/h3&gt;
+    &lt;div class="_article-publish"&gt;
+        &lt;span&gt;Written by&lt;/span&gt;
+        &lt;span&gt;&lt;a href="#"&gt;andikachamberlin&lt;/a&gt;&lt;/span&gt;
+        &lt;span&gt;01 Januari 2018&lt;/span&gt;
+        &lt;span&gt;&lt;a href="#"&gt;Category&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;p class="_article-content"&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid expedita ratione maxime mollitia aperiam vel error ex libero delectus neque nemo ab quia illum sed minus in unde, voluptatem eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ipsam ex optio fugit assumenda accusamus labore exercitationem a blanditiis, repudiandae veritatis unde dolorum amet magni eum. Totam modi, accusamus doloremque.
+    &lt;/p&gt;
+
+    &lt;div class="_article-btn"&gt;
+        &lt;a href="#"&gt;Readmore&lt;/a&gt;
+        &lt;a href="#"&gt;Comments &lt;span class="_badge"&gt;10&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end article -->
+
+        <div class="_sidebar-mb" id="_pagination">
+            <h2 class="_push-b-m">Pagination</h2>
+            <p class="_font-size-150pc _push-b-d">Make navigation move pages.</p>
+
+            <ul class="_pagination">
+                <li><a href="#"></a>Previous</li>
+                <li><a href="#"></a>1</li>
+                <li><a href="#"></a>2</li>
+                <li><a href="#"></a>3</li>
+                <li><a href="#"></a>Next</li>
+            </ul>
+
+<pre class="language-html notranslate">&lt;ul class="_pagination"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;Previous&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;1&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;2&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;3&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;Next&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+        </div>
+        <!-- end -->
+
+        <div class="_sidebar-mb" id="_mq">
+            <h2 class="_push-b-m">Media Query</h2>
+            <p class="_font-size-150pc">Eliminating Elements on the condition of smartphones, tablets, desktops.</p>
+
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th>_hs</th>
+                        <td>@media (max-width: 600px)</td>
+                        <td>Removes elements in smartphone conditions</td>
+                    </tr>
+                    <tr>
+                        <th>_hm</th>
+                        <td>@media (max-width:992px) and (min-width:601px)</td>
+                        <td>Removes elements on tablet conditions</td>
+                    </tr>
+                    <tr>
+                        <th>_hl</th>
+                        <td>@media (min-width:993px)</td>
+                        <td>Removes elements in desktop conditions</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p class="_warning-yellow _hs _hm">
+                You are currently in a desktop condition. This element is removed in the condition of smartphones and tablets
+            </p>
+
+<pre class="language-html notranslate _hs _hm">&lt;div class="_hs _hm"&gt;...&lt;/div&gt;
+</pre>
+
+            <p class="_warning-yellow _hs _hl">
+                You are currently in a tablet condition. This element is removed in the condition of smartphones and desktops
+            </p>
+
+<pre class="language-html notranslate _hs _hl">&lt;div class="_hs _hl"&gt;...&lt;/div&gt;
+</pre>
+
+            <p class="_warning-yellow _hm _hl">
+                You are currently in a smartphone condition. This element is removed on tablet and desktop conditions
+            </p>
+
+<pre class="language-html notranslate _hm _hl">&lt;div class="_hm _hl"&gt;...&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end media query -->
+
+        <div class="_sidebar-mb" id="_border">
+            <h2 class="_push-b-m">Borders</h2>
+            <p class="_font-size-150pc">Make a line with the border. Up, Right, Down, Left.</p>
+
+    
+            <span class="_inline-block _border _grid _push-t-d _push-r-d">
+                Border Default
+            </span>
+
+            <span class="_inline-block _border-t _grid _push-t-d _push-r-d">
+                Border Top
+            </span>
+
+            <span class="_inline-block _border-r _grid _push-t-d _push-r-d">
+                Border Right
+            </span>
+
+            <span class="_inline-block _border-b _grid _push-t-d _push-r-d">
+                Border Bottom
+            </span>
+
+            <span class="_inline-block _border-l _grid _push-t-d _push-r-d">
+                Border Left
+            </span>
+
+            <div class="_border _grid _push-t-d _circle _circle-demo">
+                <div class="_position-middle">
+                    Circle
+                </div>
+            </div>
+            
+
+<pre class="language-html notranslate">&lt;span class="_border"&gt;
+    Border Default
+&lt;/span&gt;
+
+&lt;span class="_border-t"&gt;
+    Border Top
+&lt;/span&gt;
+
+&lt;span class="_border-r"&gt;
+    Border Right
+&lt;/span&gt;
+
+&lt;span class="_border-b"&gt;
+    Border Bottom
+&lt;/span&gt;
+
+&lt;span class="_border-l"&gt;
+    Border Left
+&lt;/span&gt;
+
+&lt;div class="_border _circle"&gt;
+    Circle
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end borders -->
+
+        <div class="_sidebar-mb" id="_display">
+            <h2 class="_push-b-m">Display</h2>
+            <p class="_font-size-150pc">Make a display with class.</p>
+
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <td>_block</td>
+                        <td>_inline-block</td>
+                        <td>_inline</td>
+                    </tr>
+                </table>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_block"&gt;...&lt;/div&gt;
+&lt;div class="_inline-block"&gt;...&lt;/div&gt;
+&lt;div class="_inline"&gt;...&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end display -->
+
+        <div class="_sidebar-mb" id="_wh">
+            <h2 class="_push-b-m">Width & Height</h2>
+            <p class="_font-size-150pc">Make width and height with class. Width with% while height with px.</p>
+
+            <div class="_row-flex _grid _push-t-d _mpush-d">
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <div class="_table-scroll">
+                        <table>
+                            <tr>
+                                <th colspan="2">Width</th>
+                            </tr>
+                            <tr>
+                                <td>_width-10pc</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-20pc</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-30pc</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-40pc</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-50pc</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-60pc</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-70pc</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-80pc</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-90pc</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr>
+                                <td>_width-100pc</td>
+                                <td>100%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <div class="_table-scroll">
+                        <table>
+                            <tr>
+                                <td>._width-d</td>
+                                <td>400px</td>
+                            </tr>
+                            <tr>
+                                <td>._width-s</td>
+                                <td>200px</td>
+                            </tr>
+                            <tr>
+                                <td>._width-m</td>
+                                <td>600px</td>
+                            </tr>
+                            <tr>
+                                <td>._width-l</td>
+                                <td>800px</td>
+                            </tr>
+                            <tr>
+                                <td>._width-g</td>
+                                <td>1000px</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="_table-scroll _push-t-d">
+                        <table>
+                            <tr>
+                                <th colspan="2">Height</th>
+                            </tr>
+                            <tr>
+                                <td>._height-d</td>
+                                <td>400px</td>
+                            </tr>
+                            <tr>
+                                <td>._height-s</td>
+                                <td>200px</td>
+                            </tr>
+                            <tr>
+                                <td>._height-m</td>
+                                <td>600px</td>
+                            </tr>
+                            <tr>
+                                <td>._height-l</td>
+                                <td>800px</td>
+                            </tr>
+                            <tr>
+                                <td>._height-g</td>
+                                <td>1000px</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end wh -->
+
+        <div class="_sidebar-mb" id="_color">
+            <h2 class="_push-b-m">_nel Color</h2>
+            <p class="_font-size-150pc">Four smooth colors _nel.</p>
+
+            <div class="_height-s _push-t-d _nel-bg-red"></div>
+            <div class="_height-s _nel-bg-yellow"></div>
+            <div class="_height-s _nel-bg-green"></div>
+            <div class="_height-s _push-b-d _nel-bg-blue"></div>
+
+            <span class="_nel-red _font-size-150pc"><b>_nel Red</b></span>
+            <span class="_nel-yellow _font-size-150pc"><b>_nel Yellow</b></span>
+            <span class="_nel-green _font-size-150pc"><b>_nel Green</b></span>
+            <span class="_nel-blue _font-size-150pc"><b>_nel Blue</b></span>
+
+<pre class="language-html notranslate">&lt;div class="_nel-bg-red"&gt;...&lt;/div&gt;
+&lt;div class="_nel-bg-yellow"&gt;...&lt;/div&gt;
+&lt;div class="_nel-bg-green"&gt;...&lt;/div&gt;
+&lt;div class="_nel-bg-blue"&gt;...&lt;/div&gt;
+
+&lt;div class="_nel-red"&gt;...&lt;/div&gt;
+&lt;div class="_nel-yellow"&gt;...&lt;/div&gt;
+&lt;div class="_nel-green"&gt;...&lt;/div&gt;
+&lt;div class="_nel-blue"&gt;...&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end color -->
+
+        <div class="_sidebar-mb" id="_push">
+            <h2 class="_push-b-m">Push</h2>
+            <p class="_font-size-150pc">Class to push elements by margin. Can push (+) or (-).</p>
+
+            <div class="_warning-blue">
+                Please note, the unique code behind the class has the meaning, (d) default, (t) top, (r) right, (b) bottom, (l) left. and mpush means minus push. Means minus size.
+            </div>
+
+            <div class="_table-scroll">
+                <table>
+                    <tr>
+                        <th>Size</th>
+                        <th>_push</th>
+                        <th>_mpush</th>
+                        <th>_push-t</th>
+                        <th>_push-r</th>
+                        <th>_push-b</th>
+                        <th>_push-r</th>
+                    </tr>
+                    <tr>
+                        <td>1em</td>
+                        <td>_push-d</td>
+                        <td>_mpush-d</td>
+                        <td>_push-t-d</td>
+                        <td>_push-r-d</td>
+                        <td>_push-b-d</td>
+                        <td>_push-l-d</td>
+                    </tr>
+                    <tr>      
+                        <td>4px</td>
+                        <td>_push-s</td>
+                        <td>_mpush-s</td>
+                        <td>_push-t-s</td>
+                        <td>_push-r-s</td>
+                        <td>_push-b-s</td>
+                        <td>_push-l-s</td>
+                    </tr>
+                    <tr>    
+                        <td>8px</td>
+                        <td>_push-m</td>
+                        <td>_mpush-m</td>
+                        <td>_push-t-m</td>
+                        <td>_push-r-m</td>
+                        <td>_push-b-m</td>
+                        <td>_push-l-m</td>
+                    </tr>
+                    <tr>    
+                        <td>24px</td>
+                        <td>_push-l</td>
+                        <td>_mpush-l</td>
+                        <td>_push-t-l</td>
+                        <td>_push-r-l</td>
+                        <td>_push-b-l</td>
+                        <td>_push-l-l</td>
+                    </tr>
+                    <tr>
+                        <td>32px</td>
+                        <td>_push-g</td>
+                        <td>_mpush-g</td>
+                        <td>_push-t-g</td>
+                        <td>_push-r-g</td>
+                        <td>_push-b-g</td>
+                        <td>_push-l-g</td>
+                    </tr>
+                </table>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_push-t-d"&gt;&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end push -->
+
+        <div class="_sidebar-mb" id="_embed">
+            <h2 class="_push-b-m">Embeds</h2>
+            <p class="_font-size-150pc">Display external files with iframe, video, embed and object tags. To display youtube videos, it is recommended to use the embed tag. But for offline, you can use a tag other than the embed tag.</p>
+
+<pre class="language-html notranslate">&lt;div class="_embed _ratio-21by9"&gt;
+    &lt;embed class="_embed-item" src="https://www.youtube.com/embed/ID"&gt;
+&lt;/div&gt;
+
+&lt;div class="_embed _ratio-16by9"&gt;
+    &lt;embed class="_embed-item" src="https://www.youtube.com/embed/ID"&gt;
+&lt;/div&gt;
+
+&lt;div class="_embed _ratio-4by3"&gt;
+    &lt;embed class="_embed-item" src="https://www.youtube.com/embed/ID"&gt;
+&lt;/div&gt;
+
+&lt;div class="_embed _ratio-1by1"&gt;
+    &lt;embed class="_embed-item" src="https://www.youtube.com/embed/ID"&gt;
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end embed -->
+
+        <div class="_sidebar-mb" id="_grid">
+            <h2 class="_push-b-m">Grid</h2>
+            <p class="_font-size-150pc">Make 12 columns with flex easily. It's time to say goodbye to float, so far he has accompanied us in making a column. Let's say thank you.</p>
+
+            <h5 class="_push-t-d">Responsive breakpoints</h5>
+            <p class="_push-t-m">Below is a media query to overcome the appearance of columns in 3 main devices. If you look at the code below, the class without media is the class for smartphone mode, while <b class ="_ nel-blue"> min-width: 600px </b> for tablets and then for desktop.</p>
+
+<pre class="language-html notranslate">._flex._s12 {width: var(--flex12)}
+...
+
+@media only screen and (min-width:601px){
+    ._flex._m12 {width: var(--flex12)}
+    ...
+}
+
+@media only screen and (min-width:993px){
+    ._flex._m12 {width: var(--flex12)}
+    ...
+}
+</pre>        
+
+            <h5 class="_push-t-d">12 Column</h5>
+            
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th>Size</th>
+                        <th>Desktop</th>
+                        <th>Tablet</th>
+                        <th>Smartphone</th>
+                    </tr>
+                    <tr>
+                        <td>100%</td>
+                        <td>_l12</td>
+                        <td>_m12</td>
+                        <td>_s12</td>
+                    </tr>
+                    <tr>
+                        <td>91.66666667%</td>
+                        <td>_l11</td>
+                        <td>_m11</td>
+                        <td>_s11</td>
+                    </tr>
+                    <tr>
+                        <td>83.33333333%</td>
+                        <td>_l10</td>
+                        <td>_m10</td>
+                        <td>_s10</td>
+                    </tr>
+                    <tr>
+                        <td>75%</td>
+                        <td>_l9</td>
+                        <td>_m9</td>
+                        <td>_s9</td>
+                    </tr>
+                    <tr>
+                        <td>66.66666667%</td>
+                        <td>_l8</td>
+                        <td>_m8</td>
+                        <td>_s8</td>
+                    </tr>
+                    <tr>
+                        <td>58.33333333%</td>
+                        <td>_l7</td>
+                        <td>_m7</td>
+                        <td>_s7</td>
+                    </tr>
+                    <tr>
+                        <td>50%</td>
+                        <td>_l6</td>
+                        <td>_m6</td>
+                        <td>_s6</td>
+                    </tr>
+                    <tr>
+                        <td>41.66666667%</td>
+                        <td>_l5</td>
+                        <td>_m5</td>
+                        <td>_s5</td>
+                    </tr>
+                    <tr>
+                        <td>33.33333333%</td>
+                        <td>_l4</td>
+                        <td>_m4</td>
+                        <td>_s4</td>
+                    </tr>
+                    <tr>
+                        <td>25%</td>
+                        <td>_l3</td>
+                        <td>_m3</td>
+                        <td>_s3</td>
+                    </tr>
+                    <tr>
+                        <td>16.66666667%</td>
+                        <td>_l2</td>
+                        <td>_m2</td>
+                        <td>_s2</td>
+                    </tr>
+                    <tr>
+                        <td>8.33333333%</td>
+                        <td>_l1</td>
+                        <td>_m1</td>
+                        <td>_s1</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="_row-flex _push-t-d _demo-grid">
+                <div class="_flex _l3 _m6 _s12">
+                    <div class="_height-s _nel-bg-red">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <div class="_flex _l3 _m6 _s12">
+                    <div class="_height-s _nel-bg-yellow">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <div class="_flex _l3 _m6 _s12">
+                    <div class="_height-s _nel-bg-green">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <div class="_flex _l3 _m6 _s12">
+                    <div class="_height-s _nel-bg-blue">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            3
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_row-flex"&gt;
+    &lt;div class="_flex _l3 _m6 _s12"&gt;
+        
+    &lt;/div&gt;
+    &lt;div class="_flex _l3 _m6 _s12"&gt;
+        
+    &lt;/div&gt;
+    &lt;div class="_flex _l3 _m6 _s12"&gt;
+        
+    &lt;/div&gt;
+    &lt;div class="_flex _l3 _m6 _s12"&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            
+            <p class="_push-t-d _push-b-d">
+                To make an offset, you don't need to fill the content on the left side, and it's like a margin-left push on the column float. But on Flexbox, we don't need to create more classes, just empty it. 
+            </p>
+
+            <div class="_row-flex">
+                <div class="_flex _l6 _m6 _s6">
+                    <div class="_height-s">
+                        Offset
+                    </div>
+                </div>
+
+                <div class="_flex _l6 _m6 _s6">
+                    <div class="_height-s _nel-bg-green">
+
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_row-flex"&gt;
+    &lt;div class="_flex _l6 _m6 _s6"&gt;
+        No Content
+    &lt;/div&gt;
+
+    &lt;div class="_flex _l6 _m6 _s6"&gt;
+        Content 
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+            <h5>Class Grid</h5>
+            <p class="_push-t-m">
+                The grid class is the padding to make the column have a distance, see the example below.
+            </p>
+
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th>Size</th>
+                        <th>Class</th>
+                        <th>Stuck Container (16px)</th>
+                    </tr>
+                    <tr>
+                        <td>8px</td>
+                        <td>_grid</td>
+                        <td>_mpush-d</td>
+                    </tr>
+                    <tr>
+                        <td>4px</td>
+                        <td>_grid-s</td>
+                        <td>_mpush-m</td>
+                    </tr>
+                    <tr>
+                        <td>16px</td>
+                        <td>_grid-m</td>
+                        <td>_mpush-g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="_warning-yellow">
+                When the container is given a padding, it will automatically push all the elements including the column, so it will make the column pushed too. But if the container is not given a padding value, the column will run well. Below is an example if the container is rated padding.
+            </div>
+
+            <div class="_row-flex _grid _push-t-s _demo-grid">
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <div class="_height-s _nel-bg-red">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            6
+                        </div>
+                    </div>
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <div class="_height-s _nel-bg-yellow">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            6
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_row-flex _grid"&gt;
+    &lt;div class="_flex _grid _l6 _m6 _s12"&gt;
+       
+    &lt;/div&gt;
+    &lt;div class="_flex _grid _l6 _m6 _s12"&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+            <p class="_push-t-d">To overcome this additional class _mpush-d</p>
+            
+            <div class="_row-flex _grid _mpush-d _push-t-s _demo-grid">
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <div class="_height-s _nel-bg-green">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            6
+                        </div>
+                    </div>
+                </div>
+                <div class="_flex _grid _l6 _m6 _s12">
+                    <div class="_height-s _nel-bg-blue">
+                        <div class="_position-middle _hm _hl">
+                            12
+                        </div>
+                        <div class="_position-middle _hs _hl">
+                            6
+                        </div>
+                        <div class="_position-middle _hm _hs">
+                            6
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_row-flex _grid _mpush-d"&gt;
+    &lt;div class="_flex _grid _l6 _m6 _s12"&gt;
+       
+    &lt;/div&gt;
+    &lt;div class="_flex _grid _l6 _m6 _s12"&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end grid -->
+
+        <div class="_sidebar-mb" id="_layout">
+            <h2 class="_push-b-m">Layout</h2>
+            <p class="_font-size-150pc">Keep the container in the middle when it passes through the browser supervisor. See the example below to understand.</p>
+
+            <div class="_table-scroll _push-t-d">
+                <table>
+                    <tr>
+                        <th>Size</th>
+                        <th>Class</th>
+                    </tr>
+                    <tr>
+                        <td>1024px</td>
+                        <td>layout-d</td>
+                    </tr>
+                    <tr>
+                        <td>300px</td>
+                        <td>layout-t</td>
+                    </tr>
+                    <tr>
+                        <td>600px</td>
+                        <td>layout-s</td>
+                    </tr>
+                    <tr>
+                        <td>800px</td>
+                        <td>layout-m</td>
+                    </tr>
+                    <tr>
+                        <td>1280px</td>
+                        <td>layout-l</td>
+                    </tr>
+                    <tr>
+                        <td>1600px</td>
+                        <td>layout-g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="_layout-t _height-d _push-t-d _nel-bg-blue">
+
+            </div>
+
+<pre class="language-html notranslate">&lt;div class="_layout-d"&gt;
+
+&lt;/div&gt;
+</pre>
+
+        </div>
+        <!-- end layout -->
+
+        <div class="_sidebar-mb" id="_about">
+            <h2 class="_push-b-m">About</h2>
+            <p class="_font-size-150pc">I'm <a href="http://andikachamberlin.github.io"> <b class ="_nel-blue"> Andika Chamberlin </b> </a> created a _nel framework with good intentions, which is to make it easier for other developers to create web display. I also want to thank all parties for the code that I use to be incorporated into the _nel framework. I am a Muslim, and only hope your prayers can enter the paradise of Amin.</p>
+
+            <h5 class="_push-t-d">History</h5>
+
+            <p class="_push-t-m">Initially the _nel framework is a <a href="http://getcore.github.io" class="_nel-blue"> core </a> framework that will be released in version 6.0, but for reasons of name: core is identical to the net framework belongs to microsoft, so the author changed its name to _nel. It seems that no one has this name, moreover _nel has a unique code _ so it's more certain that there is no same framework name. In the past I created a framework called core, in short during the development period, I always had difficulty overcoming new css properties that did not support the old browser. Examples of css variables that do not support IE and many other examples. Therefore, I finally risked not supporting all IE browser versions. And emphasizes the use of 5 popular browsers, chrome, firefox, edge, opera and safari. And created the gear. Framework created with variable css and open source code. </p>
+
+            <p class="_push-t-m">I honestly are not good at talking, I should just close it. But if you want to be friends, I am very grateful and want to say <b> how are you? hope you're healthy always. </b></p>
+
+            <footer class="_demo-footer _push-t-g">
+                <span>Created By </span><a href="http://andikachamberlin.github.io" class="_nel-blue"><b>Andika Chamberlin</b></a>
+            </footer>
+
+        </div>
+        <!-- end -->
+
+    </div>
+    <!-- end sidebar content -->
+
+
+
+    <!-- import js -->
+    <script src="js/nel.js"></script>
+    <script src="js/code.js"></script>
+    <script>
+        // scroll smooth by tania
+        $("._sidebar-items a[href^='#']").click(function(e) {
+            e.preventDefault();
+            
+            var position = $($(this).attr("href")).offset().top - 20;
+
+            $("body, html").animate({
+                scrollTop: position
+            }, 800 );
+        });
+
+    </script>
+
+</body>
+</html>

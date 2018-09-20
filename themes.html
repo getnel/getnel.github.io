@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Theme">
+    <meta name="author" content="Andika Chamberlin">
+    <!-- title -->
+    <title>Framework _nel . Theme </title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/nel.png" type="image/x-icon">
+    <!-- import css-->
+    <link rel="stylesheet" href="css/nel.min.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- cdn jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <style>
+._slick-src-1{
+    background-image: url(img/mockup/mockup1.jpg);
+}
+._slick-src-2{
+    background-image: url(img/mockup/mockup2.jpg);
+}
+._slick-src-3{
+    background-image: url(img/mockup/mockup3.jpg);
+}
+
+._content-grid-img._src1{
+  background-image: url(img/mockup/mockup2.jpg);
+}
+._content-grid-img._src2{
+  background-image: url(img/mockup/mockup3.jpg);
+}
+._content-grid-img._src3{
+  background-image: url(img/mockup/mockup4.jpg);
+}
+._content-grid-img._src4{
+  background-image: url(img/mockup/mockup5.jpg);
+}
+
+._header-background._src-bg{
+    background-image: url(img/mockup/mockup8.jpg);
+}
+
+._nel-white{
+    color: var(--white);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.85);
+}
+    </style>
+
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+
+    <!-- Alert Dont Support IE -->
+    <div id="_IE-Alert"></div>
+    <!-- End Alert Dont Support IE -->
+
+    <!-- Load -->
+    <div class="_load" id="_load">
+        <div class="_load-middle">
+            <div class="_load-circle"></div>
+        </div>
+    </div>
+    <!-- End Load -->
+
+    <!-- theme -->
+    
+    <!-- nav small -->
+    <div class="_nav-small">
+        <div class="_layout-d">
+            <div class="_nav-small-mobile" id="_nav-small-mobile">
+                <div class="_nav-small-left">
+                    <ul>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Product Plus</a></li>
+                    </ul>
+                </div>
+                <div class="_nav-small-right">
+                    <ul class="_nav-small-list">
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Language</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_nav-small-toggle" id="_nav-small-toggle">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <!-- end nav small -->
+
+    <!-- nav -->
+    <div class="_nav">
+        <div class="_layout-d">
+            <div class="_nav-logo">
+                <a href="#"><strong>Logo</strong></a>
+            </div>
+            <div class="_nav-icon" id="_nav-icon">
+                <i></i>
+            </div>
+            <div class="_nav-search" id="_nav-search">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+            </div>
+            <div class="_nav-search-input" id="_nav-search-input">
+                <div class="_nav-search-close" id="_nav-search-close"></div>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="_nav-items" id="_nav-items">
+                <ul class="_nav-list" id="_nav-list">
+                    <li class="_nav-toggle"><a>Multi level Dropdown<i class="_nav-arrow"></i></a>
+                        <ul class="_nav-dropdown">
+                            <li><a href="#">_nel 1</a></li>
+                            <li class="_nav-subtoggle"><a>_nel 2<i class="_nav-arrow"></i></a>
+                                <ul class="_nav-subdropdown">
+                                    <li><a href="#">_nel sub 1</a></li>
+                                    <li><a href="#">_nel sub 2</a></li>
+                                    <li class="_nav-subtoggle"><a href="#">_nel sub 3<i class="_nav-arrow"></i></a>
+                                        <ul class="_nav-endsubdropdown">
+                                            <li><a href="#">_nel end sub 1</a></li>
+                                            <li><a href="#">_nel end sub 2</a></li>
+                                            <li><a href="#">_nel end sub 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">_nel 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="_nav-mega"><a>Mega Dropdown<i class="_nav-arrow"></i></a>
+                        <ul class="_nav-dropdown _nav-megadropdown">
+                            <li class="_row-flex _layout-d">
+                                <ul class="_flex _l3 _m6 _s12">
+                                    <li><a href="#_">Mega 1</a></li>
+                                    <li><a href="#_">Mega 2</a></li>
+                                    <li><a href="#_">Mega 3</a></li>   
+                                </ul>
+                                <ul class="_flex _l3 _m6 _s12">
+                                    <li><a href="#_">Mega 1</a></li>
+                                    <li><a href="#_">Mega 2</a></li>
+                                    <li><a href="#_">Mega 3</a></li>   
+                                </ul>
+                                <ul class="_flex _l3 _m6 _s12">
+                                    <li><a href="#_">Mega 1</a></li>
+                                    <li><a href="#_">Mega 2</a></li>
+                                    <li><a href="#_">Mega 3</a></li>   
+                                </ul>
+                                <ul class="_flex _l3 _m6 _s12">
+                                    <li><a href="#_">Mega 1</a></li>
+                                    <li><a href="#_">Mega 2</a></li>
+                                    <li><a href="#_">Mega 3</a></li>   
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="_nav-toggle"><a>Dropdown<i class="_nav-arrow"></i></a>
+                        <ul class="_nav-dropdown">
+                            <li><a href="#">_nel 1</a></li>
+                            <li><a href="#">_nel 2</a></li>
+                            <li><a href="#">_nel 3 test dot dot dot</a></li>
+                        </ul>
+                    </li>
+                    <li class="_nav-link"><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="_nav-clearfix"></div>
+    <!-- /nav -->
+
+    <!-- slick -->
+    <div class="_slick" id="_slick">
+        <div>
+            <div class="_slick-img _slick-src-1">
+                <div class="_position-middle _nel-white">
+                    <h3>Theme Free For You</h3>
+                    <p>License MIT</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="_slick-img _slick-src-2">
+                <div class="_position-middle _nel-white">
+                    <h3>Examples Of Themes Created With _nel</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="_slick-img _slick-src-3">
+                <div class="_position-middle _nel-white">
+                    <h3>If You Like Fork on Github _nel</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slick -->
+
+    <!-- text header -->
+    <div class="_text-header">
+        <h5>Header Content</h5>
+        <p class="_layout-s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium natus rem amet fugiat numquam nemo dicta <a href="#" class="_text-header-link">blanditiis omnis?</a></p>
+        <a href="#" class="_btn-default">Collection</a>
+    </div>
+    <!-- end text header -->
+
+    <!-- content -->
+    <div class="_content-grid">
+        <div class="_row-flex">
+            <div class="_flex _l6 _m6 _s12">
+                <a href="#">
+                    <div class="_content-grid-img _src1"></div>
+                </a>
+            </div>
+            <div class="_flex _l6 _m6 _s12">
+                <div class="_content-grid-bg">
+                    <div class="_position-middle">
+                        <!-- text header -->
+                        <div class="_text-header">
+                            <h5>Grid Content</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium natus rem amet fugiat <a href="#" class="_text-header-link">blanditiis omnis?</a></p>
+                            <a href="#" class="_btn-default">Collection</a>
+                        </div>
+                        <!-- end text header -->
+                    </div>
+                </div>
+            </div>
+            <div class="_flex _l4 _m4 _s12">
+                <a href="#">
+                    <div class="_content-grid-img _src2"></div>
+                </a>
+            </div>
+            <div class="_flex _l4 _m4 _s12">
+                <a href="#">
+                    <div class="_content-grid-img _src3"></div>
+                </a>
+            </div>
+            <div class="_flex _l4 _m4 _s12">
+                <a href="#">
+                    <div class="_content-grid-img _src4"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+    <!-- text header -->
+    <div class="_text-header">
+        <h5>Header Content 2</h5>
+        <p class="_layout-s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium natus rem amet fugiat numquam nemo dicta <a href="#" class="_text-header-link">blanditiis omnis?</a></p>
+        <a href="#" class="_btn-default _push-t-m">Collection 1</a>
+        <a href="#" class="_btn-default _push-t-m">Collection 2</a>
+    </div>
+    <!-- end text header -->
+
+    <!-- content -->
+    <header class="_header-background _src-bg">
+                
+    </header>
+    <!-- end content -->
+
+    <!-- text header -->
+    <div class="_text-header">
+        <h5>Header Content 3</h5>
+        <p class="_layout-s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="_text-header-link">blanditiis omnis?</a></p>
+        <a href="#" class="_btn-default">Collection</a>
+    </div>
+    <!-- end text header -->
+
+    <footer class="_footer">
+        <div class="_layout-d">
+            <div class="_row-flex _grid">
+                <div class="_flex _grid _l2 _m3 _s12">
+                    <ul class="_list">
+                        <li><a href="#">Find _nel</a></li>
+                        <li><a href="#">How</a></li>
+                    </ul>
+                </div>
+                <div class="_flex _grid _l2 _m3 _s12">
+                    <ul class="_list">
+                        <li><a href="#">Help _nel</a></li>
+                        <li><a href="#">Help Eat</a></li>
+                        <li><a href="#">Help Drink</a></li>
+                        <li><a href="#">Help Car</a></li>
+                        <li><a href="#">Help Bus</a></li>
+                        <li><a href="#">Help Eyes</a></li>
+                    </ul>
+                </div>
+                <div class="_flex _grid _l2 _m3 _s12">
+                    <ul class="_list">
+                        <li><a href="#">About _nel</a></li>
+                        <li><a href="#">Bomboo</a></li>
+                        <li><a href="#">Popgreen</a></li>
+                        <li><a href="#">Quantum</a></li>
+                    </ul>
+                </div>
+                <div class="_flex _grid _l4 _hm _s12">
+                    
+                </div>
+                <div class="_flex _grid _l2 _m3 _s12">
+                    <ul class="_list">
+                        <li><a href="#">Sosial Media</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="_footer-nav">
+            <div class="_layout-d">
+                <div class="_footer-nav-left">
+                    <a href="#">Region</a>
+                    <a>&copy; 2018 Corporate, inc. All Rights Reserved</a>
+                </div>
+                <div class="_footer-nav-right">
+                    <a href="#">Guides</a>
+                    <a href="#">Term</a>
+                    <a href="#">License</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end theme -->
+
+    <!-- import js -->
+    <script src="js/nel.min.js"></script>
+    <script>
+        $("#_slick").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 800
+        });
+
+    </script>
+
+</body>
+</html>

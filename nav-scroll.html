@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nav Scroll">
+    <meta name="author" content="Andika Chamberlin">
+    <!-- title -->
+    <title>Nav Scroll</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/nel.png" type="image/x-icon">
+    <!-- import css-->
+    <link rel="stylesheet" href="css/nel.min.css">
+    <!-- if cdn jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+
+    <!-- Alert Dont Support IE -->
+    <div id="_IE-Alert"></div>
+    <!-- End Alert Dont Support IE -->
+
+    <!-- Load -->
+    <div class="_load" id="_load">
+        <div class="_load-middle">
+            <div class="_load-circle"></div>
+        </div>
+    </div>
+    <!-- End Load -->
+
+    <!-- page -->
+    <div data-scroll-index="0">
+        <div class="_nav-scroll-header">
+            <div class="_nav-scroll" id="_nav-scroll">   
+                <div class="_layout-d">
+                    <div class="_nav-scroll-logo">
+                        <a href=""><strong>_nel</strong></a>
+                    </div>     
+                    <div class="_nav-scroll-toggle" id="_nav-scroll-toggle">
+                        <i></i>
+                    </div>   
+                    <div class="_nav-scroll-items" id="_nav-scroll-items">
+                        <ul class="_nav-scroll-list" id="_nav-scroll-list">
+                            <li><a data-scroll-nav="0" class="_nav-scroll-active">Home</a></li>
+                            <li><a data-scroll-nav="1">About</a></li>
+                            <li><a data-scroll-nav="2">Services</a></li>
+                            <li><a data-scroll-nav="3">Testimonials</a></li>
+                            <li><a data-scroll-nav="4">Blog</a></li>
+                            <li><a data-scroll-nav="5">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="_height-m" data-scroll-index="1">
+        about
+    </div>
+    <div class="_height-m" data-scroll-index="2">
+        services
+    </div>
+    <div class="_height-m" data-scroll-index="3">
+        testimonials
+    </div>
+    <div class="_height-m" data-scroll-index="4">
+        blog
+    </div>
+    <div class="_height-m" data-scroll-index="5">
+        contact
+    </div>
+
+    
+    <!-- end page -->
+
+    <!-- import js -->
+    <script src="js/nel.min.js"></script>
+
+</body>
+</html>

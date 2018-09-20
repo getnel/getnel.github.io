@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description">
+    <meta name="author" content="author">
+    <!-- title -->
+    <title>Template</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/nel.png" type="image/x-icon">
+    <!-- _nel.css-->
+    <link rel="stylesheet" href="css/nel.min.css">
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!-- cdn jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- cdn mixitup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
+    <!-- cdn magnific-popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+<!-- end head -->
+
+<!-- body -->
+<body>
+
+    <!-- Alert Dont Support IE -->
+    <div id="_IE-Alert"></div>
+    <!-- End Alert Dont Support IE -->
+
+    <!-- Load -->
+    <div class="_load" id="_load">
+        <div class="_load-middle">
+            <div class="_load-circle"></div>
+        </div>
+    </div>
+    <!-- End Load -->
+
+
+    <!-- your code -->
+    
+    <div class="mix-controls">
+        <button type="button" class="mix-control" data-filter="all">All</button>
+        <button type="button" class="mix-control" data-filter=".front">Frond End</button>
+        <button type="button" class="mix-control" data-filter=".back">Back End</button>
+        <button type="button" class="mix-control" data-filter=".design">Web Design</button>
+    </div>
+
+    <div class="mix-container">
+        <div class="mix front">
+            <a href="img/mockup/mockup1.jpg" title="Front End Developer">
+                <img src="img/mockup/mockup1.jpg" alt="portfolio">
+            </a>
+        </div>
+        <div class="mix front">
+            <a href="img/mockup/mockup2.jpg" title="Front End Developer">
+                <img src="img/mockup/mockup2.jpg" alt="portfolio">
+            </a>
+        </div>
+        <div class="mix back">
+            <a href="img/mockup/mockup9.jpg" title="Back End Developer">
+                <img src="img/mockup/mockup9.jpg" alt="portfolio">
+            </a>
+        </div>
+        <div class="mix design">
+            <a href="img/mockup/mockup4.jpg" title="Web Design">
+                <img src="img/mockup/mockup4.jpg" alt="portfolio">
+            </a>
+        </div>
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+    </div>
+
+    <!-- end your code -->
+
+
+    <!-- _nel.js -->
+    <script src="js/nel.min.js"></script>
+    <script>
+        // ready function
+    _filter();
+    _filterPopup();
+
+    // // _filter function
+    function _filter(){
+
+        var containerEl = document.querySelector('.mix-container');
+
+        var mixer = mixitup(containerEl, {
+            animation: {
+                easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+            }
+        });
+
+    }
+
+    // _filter popup function
+    function _filterPopup(){
+        $('.mix-container').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+              verticalFit: true,
+              titleSrc: function(item) {
+                return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+              }
+            },
+            gallery: {
+              enabled: true
+            },
+            zoom: {
+              enabled: true,
+              duration: 400, // don't foget to change the duration also in CSS
+              opener: function(element) {
+                return element.find('img');
+              }
+            }
+            
+        });
+    }
+    </script>
+
+</body>
+</html>
