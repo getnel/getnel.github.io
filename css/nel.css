@@ -3215,31 +3215,6 @@ input[type="button"]:hover{
 /*-----------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------*/
-/*stellar*/
-
-._stellar {
-  min-height: var(--400px);
-  position: var(--relative);
-  background-attachment: var(--fixed);
-  background-repeat: var(--no-repeat);
-  background-size: var(--cover);
-  overflow: var(--hidden);
-}
-
-._stellar:before{
-  content: var(--quote);
-  position: var(--position);
-  top: var(--0);
-  right: var(--0);
-  bottom: var(--0);
-  left: var(--0);
-  background-color: var(--light-black-middle);
-}
-
-/*end stellar*/
-/*-----------------------------------------------------------------*/
-
-/*-----------------------------------------------------------------*/
 /*mixitup*/
 
 .mix-controls {
