@@ -12,8 +12,8 @@
     <title>_nel Framework</title>
     <!-- Favicon -->
     <link rel="icon" href="img/nel.png" type="image/x-icon">
-    <!-- _nel.css-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nel-quantum@1.0.0/css/nel.min.css">
+    <!-- cdn _nel.min.css SRI-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nel-quantum@1.0.0/css/nel.min.css" integrity="sha256-tY6fKw/cOin6Ex9RNiodS0dLO3hsvfSoMtoWWnL9qw0=" crossorigin="anonymous">
     <!-- index-style.css -->
     <link rel="stylesheet" href="index-style.css">
     <!-- cdn jQuery -->
@@ -248,6 +248,59 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
+
+            <h4 class="_push-t-d">CDN SRI</h4>
+            <p>It is highly recommended to use CDN SRI</p>
+
+<pre class="language-html notranslate">&lt;!DOCTYPE html&gt;
+&lt;html lang="zxx"&gt;
+
+&lt;!-- head --&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="description" content="description"&gt;
+    &lt;meta name="author" content="author"&gt;
+    &lt;!-- title --&gt;
+    &lt;title&gt;Template&lt;/title&gt;
+    &lt;!-- Favicon --&gt;
+    &lt;link rel="icon" href="img/nel.png" type="image/x-icon"&gt;
+    &lt;!-- cdn _nel.min.css SRI--&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nel-quantum@1.0.0/css/nel.min.css" integrity="sha256-tY6fKw/cOin6Ex9RNiodS0dLO3hsvfSoMtoWWnL9qw0=" crossorigin="anonymous"&gt;
+    &lt;!-- cdn jQuery --&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;!-- end head --&gt;
+
+&lt;!-- body --&gt;
+&lt;body&gt;
+
+    &lt;!-- Alert Dont Support IE --&gt;
+    &lt;div id="_IE-Alert"&gt;&lt;/div&gt;
+    &lt;!-- End Alert Dont Support IE --&gt;
+
+    &lt;!-- Load --&gt;
+    &lt;div class="_load" id="_load"&gt;
+        &lt;div class="_load-middle"&gt;
+            &lt;div class="_load-circle"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End Load --&gt;
+
+
+    &lt;!-- your code --&gt;
+    
+    
+
+    &lt;!-- end your code --&gt;
+
+
+    &lt;!-- cdn _nel.min.js SRI --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/nel-quantum@1.0.0/js/nel.min.js" integrity="sha256-nmFso1ZCifjmH2YBYUauErSaEVg3mS36nFDXfHS+11I=" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>            
 
             <h4 class="_push-t-d">Explanation</h4>
             <p class="_push-t-m">Below are some explanations for the basic knowledge of using the framework. If you see there is a sign (_) at the beginning of each class or file, it is intentionally made to distinguish between classes and _nel framework files with vendor classes and files. _nel using css variable, so it doesn't use SASS, and that's also the reason why framework _nel doesn't support IE Browser.
@@ -2064,9 +2117,7 @@
     <!-- end sidebar content -->
 
 
-
-    <!-- import js -->
-    <script src="https://cdn.jsdelivr.net/npm/nel-quantum@1.0.0/js/nel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nel-quantum@1.0.0/js/nel.min.js" integrity="sha256-nmFso1ZCifjmH2YBYUauErSaEVg3mS36nFDXfHS+11I=" crossorigin="anonymous"></script>
     <script src="js/code.js"></script>
     <script>
         // scroll smooth by tania
